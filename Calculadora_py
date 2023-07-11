@@ -1,0 +1,41 @@
+# Receber um número
+# Receber um operador
+# Receber outro número
+# Mostrar o resultado
+
+from time import sleep
+
+print("Digite um número: ")
+número1 = int(input())
+
+print("Digite um operador")
+operador = input()
+
+print("Digite o segundo número:")
+número2 = int(input())
+
+if operador == "+":
+ resultado = número1 + número2
+ print(f"A soma de \033[1;34m{número1}\033[m + \033[1;34m{número2}\033[m deu:")
+ sleep(0.5)
+print(f"\033[1;36m{resultado}\033[m")
+
+elif operador == "-":
+ resultado = número1 - número2
+ print(f"A subtração de \033[1;34m{número1}\033[m - \033[1;34m{número2}\033[m deu:")
+ sleep(0.5)
+ print(f"\033[1;36m{resultado}\033[m")
+
+elif operador == "×":
+ resultado = número1 * número2
+ print(f"A multiplicação de \033[1;34m{número1}\033[m × \033[1;34m{número2}\033[m deu:")
+ sleep(0.5)
+ print(f"\033[1;36m{resultado}\033[m")
+
+elif operador == "÷":
+ resultado = número1 / número2
+ print(f"A divisão de \033[1;34m{número1}\033[m ÷ \033[1;34m{número2}\033[m deu:")
+ sleep(0.5)
+ print(f"\033[1;36m{resultado}\033[m")
+else:
+ print("\033[1;31m Operador incorreto!\033[m")
